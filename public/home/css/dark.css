@@ -1,0 +1,541 @@
+/*================================================
+Default CSS
+=================================================*/
+.switch-box {
+  position: fixed;
+  z-index: 1;
+  left: 3%;
+  bottom: 63px;
+}
+
+.switch-box .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch-box .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-box .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #4d4949;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch-box .slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 2.5px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0 0px 15px #2020203d;
+          box-shadow: 0 0px 15px #2020203d;
+  background: url(../img/night.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.switch-box input:checked + .slider {
+  background-color: #cbc1c1;
+}
+
+.switch-box input:focus + .slider {
+  background-color: #4d4949;
+}
+
+.switch-box input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+  background: url(../img/sunny.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.switch-box .slider.round {
+  border-radius: 50px;
+}
+
+.switch-box .slider.round:before {
+  border-radius: 50%;
+}
+
+.theme-dark body {
+  background-color: #000000;
+  color: #f1f1f1;
+}
+
+.theme-dark p {
+  color: #f1f1f1 !important;
+}
+
+.theme-dark p a {
+  color: #f1f1f1 !important;
+}
+
+.theme-dark p a:hover {
+  color: #16056b !important;
+}
+
+.theme-dark a {
+  color: #ffffff;
+}
+
+.theme-dark .h1, .theme-dark .h2, .theme-dark .h3, .theme-dark .h4, .theme-dark .h5, .theme-dark .h6, .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6 {
+  color: #ffffff !important;
+}
+
+.theme-dark .h1 a, .theme-dark .h2 a, .theme-dark .h3 a, .theme-dark .h4 a, .theme-dark .h5 a, .theme-dark .h6 a, .theme-dark h1 a, .theme-dark h2 a, .theme-dark h3 a, .theme-dark h4 a, .theme-dark h5 a, .theme-dark h6 a {
+  color: #ffffff !important;
+}
+
+.theme-dark .h1 a:hover, .theme-dark .h2 a:hover, .theme-dark .h3 a:hover, .theme-dark .h4 a:hover, .theme-dark .h5 a:hover, .theme-dark .h6 a:hover, .theme-dark h1 a:hover, .theme-dark h2 a:hover, .theme-dark h3 a:hover, .theme-dark h4 a:hover, .theme-dark h5 a:hover, .theme-dark h6 a:hover {
+  color: #16056b !important;
+}
+
+.theme-dark .header-area {
+  background: #222121;
+}
+
+.theme-dark .navbar-area .navbar-brand .white-logo {
+  display: block;
+}
+
+.theme-dark .navbar-area .navbar-brand .main-logo {
+  display: none;
+}
+
+.theme-dark .navbar-area.is-sticky {
+  background-color: #000000;
+}
+
+.theme-dark .main-nav {
+  background-color: #000000;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item a {
+  color: #ffffff;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item a:hover, .theme-dark .main-nav .navbar .navbar-nav .nav-item a:focus, .theme-dark .main-nav .navbar .navbar-nav .nav-item a.active {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item:hover a, .theme-dark .main-nav .navbar .navbar-nav .nav-item:focus a, .theme-dark .main-nav .navbar .navbar-nav .nav-item.active a {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+  background: #0e0e0e;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item a {
+  color: #ffffff;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+  color: #ffffff;
+  border-bottom: 1px dashed #000000;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
+  color: #ffffff;
+  border-bottom: 1px dashed #000000;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+  color: #ffffff;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+  color: #ffffff;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+  color: #ffffff;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+  color: #ffffff;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+  color: #ffffff;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .others-options ul li .sign-in {
+  color: #ffffff;
+}
+
+.theme-dark .main-nav .navbar .others-options ul li .cart-icon i {
+  color: #ffffff;
+}
+
+.theme-dark .main-nav .navbar .others-options ul li .cart-icon i:hover {
+  color: #ff440a;
+}
+
+.theme-dark .main-nav .navbar .others-options ul li .search-btn {
+  color: #ffffff;
+}
+
+.theme-dark .main-nav .navbar .others-options ul li .search-btn:hover {
+  color: #ff440a;
+}
+
+.theme-dark .banner-style-two.banner-bg::before {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.theme-dark .banner-style-three {
+  background: #171617;
+}
+
+.theme-dark .page-title::before {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 47, 47, 0.8)), to(rgba(13, 13, 14, 0.9)));
+  background: linear-gradient(0deg, rgba(47, 47, 47, 0.8) 0%, rgba(13, 13, 14, 0.9) 100%);
+}
+
+.theme-dark .about-section .about-text .nav-tabs .nav-item .nav-link {
+  color: #ffffff;
+}
+
+.theme-dark .about-section .about-text .nav-tabs .nav-item .nav-link.active {
+  color: #ff440a;
+  background-color: transparent;
+}
+
+.theme-dark .features-section .feature-card {
+  background: #0e0e0e;
+}
+
+.theme-dark .transport-section .transport-card .transport-text {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .transport-style-five .transport-card {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .service-details-area .service-sidebar .sidebar-widget ul li a {
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-post-area ul li {
+  color: #ffffff;
+}
+
+.theme-dark .why-choose-section .why-choose-text {
+  background: #0e0e0e;
+}
+
+.theme-dark .why-choose-section .why-choose-text .accordions .accordion-item .accordion-title {
+  background: #000000;
+}
+
+.theme-dark .why-choose-section .why-choose-text .accordions .accordion-item .accordion-content {
+  background-color: #111111;
+}
+
+.theme-dark .why-choose-section .why-choose-img .shipping-text {
+  background: #000000;
+}
+
+.theme-dark .why-choose-section .why-choose-img .shipping-text form .form-group .form-control {
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+.theme-dark .why-choose-section .why-choose-img .shipping-text form .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .why-choose-section .why-choose-img .shipping-text form .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .why-choose-section .why-choose-img .shipping-text form .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .why-choose-section .why-choose-img .shipping-text form .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .quote-bg::before {
+  background: #0b0a0d;
+}
+
+.theme-dark .get-quote-section .quote-form form .form-control {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.theme-dark .get-quote-section .quote-form form .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .get-quote-section .quote-form form .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .get-quote-section .quote-form form .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .get-quote-section .quote-form form .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .get-quote-section .quote-text .offer-text span {
+  background: #0e0e0e;
+  border: 5px solid #000000;
+}
+
+.theme-dark .get-quote-section .quote-text .offer-text p {
+  background: #000000;
+}
+
+.theme-dark .worker-section .worker-card .worker-text {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .feedback-bg::before {
+  background: #090909;
+}
+
+.theme-dark .company-section .company-slider {
+  background: #292929;
+}
+
+.theme-dark .company-section.company-style-two .company-slider {
+  background: transparent;
+}
+
+.theme-dark .blog-section .blog-card .blog-text {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-search {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-search form input {
+  background: #000000;
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-search form input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-search form input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-search form input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-search form input::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-widget {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-widget ul li a {
+  color: #ffffff;
+}
+
+.theme-dark .newsletter-section .newsletter-area {
+  background: #0e0e0e;
+}
+
+.theme-dark .newsletter-section .newsletter-area .newsletter-form .form-control {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.theme-dark .newsletter-section .newsletter-area .newsletter-form .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .newsletter-section .newsletter-area .newsletter-form .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .newsletter-section .newsletter-area .newsletter-form .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .newsletter-section .newsletter-area .newsletter-form .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .newsletter-style-two {
+  background: #242424;
+}
+
+.theme-dark .footer-area {
+  background: #1c1c1c;
+}
+
+.theme-dark .footer-area .copyright-area {
+  background: #000000;
+}
+
+.theme-dark .facilities-section .facilities-text ul li {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section {
+  background: #242424;
+}
+
+.theme-dark .contact-section .contact-area .form-group .form-control {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .message-field {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .message-field::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .message-field:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .message-field::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .message-field::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-style-two {
+  background-color: #000000;
+}
+
+.theme-dark .contact-style-two .contact-area {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .contact-card-section .contact-card::before {
+  background: #0e0e0e;
+}
+
+.theme-dark .faq-section .accordions .accordion-item .accordion-title {
+  background: #0e0e0e;
+}
+
+.theme-dark .faq-section .accordions .accordion-item .accordion-content {
+  background-color: #292929;
+}
+
+@media only screen and (max-width: 991px) {
+  .theme-dark .navbar-area .mean-container .mean-bar {
+    background-color: #000000;
+  }
+  .theme-dark .navbar-area .mean-container a.meanmenu-reveal span {
+    background: #ffffff;
+  }
+  .theme-dark .mobile-nav .logo .main-logo {
+    display: none;
+  }
+  .theme-dark .mobile-nav .logo .white-logo {
+    display: block;
+  }
+}
+/*# sourceMappingURL=dark.css.map */
