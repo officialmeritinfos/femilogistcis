@@ -130,6 +130,8 @@
                 You can track your package using the tracking number provided above. If you have any questions, feel free to contact us.<br/>
                 Please be available to receive your package at the destination. If you have any questions, feel free to contact us.
             @endif
+            <br/>
+                You can track your package using this link<a href="{{ route('home') }}">  {{ route('home') }}</a>
         </p>
     </div>
 
