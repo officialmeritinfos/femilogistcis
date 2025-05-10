@@ -263,10 +263,12 @@ class HomeController extends Controller
         ]);
         Mail::to($request->email)->send(new BookingReceived($booking));
 
-        $admin = User::where('is_admin',1)->first();
+        $admins = User::where('is_admin',1)->get();
 
-        if (!empty($admin)){
-            Mail::to($admin->email)->send(new AdminBookingNotification($booking));
+        if ($admins->count() > 0) {
+            foreach ($admins as $admin){
+                Mail::to($admin->email)->send(new AdminBookingNotification($booking));
+            }
         }
 
         return redirect()->back()->with('success', 'Your booking request has been received.');
