@@ -9,7 +9,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class FlightDelayedMailable extends Mailable implements ShouldQueue
+class FlightDelayedMailable extends Mailable
 {
     use Queueable, SerializesModels;
     public $ticket;
